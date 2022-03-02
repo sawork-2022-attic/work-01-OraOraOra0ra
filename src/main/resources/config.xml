@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="font88" class="aw01.asciiPanel.Font88"></bean>
+    <bean id="font916" class="aw01.asciiPanel.Font916"></bean>
+
+    <bean id="myPanel" class="aw01.asciiPanel.AsciiPanel">
+        <constructor-arg type="int" value="600"/>
+        <constructor-arg type="int" value="400"/>
+        <constructor-arg ref="font88"/>
+    </bean>
+</beans>
